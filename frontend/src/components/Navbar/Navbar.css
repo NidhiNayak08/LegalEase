@@ -1,0 +1,70 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #1a1f3d;
+  padding: 20px 40px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  height: 80px; /* Larger height */
+  position: relative; /* To help with centering */
+}
+
+/* Logo Styling */
+.navbar-logo a {
+  color: white;
+  font-size: 32px; /* Larger font for logo */
+  font-weight: bold;
+  text-decoration: none;
+  letter-spacing: 2px;
+  position: absolute; /* Keeps the logo on the far left */
+  left: 40px; /* Adjust as necessary */
+}
+
+/* Navbar Links Styling */
+.navbar-links {
+  list-style-type: none;
+  display: flex;
+  margin: 0 auto; /* Centering the links */
+  padding: 0;
+  justify-content: center; /* Center the links horizontally */
+  position: relative; /* Keep in place while logo is absolute */
+}
+
+.navbar-links li {
+  margin-left: 40px; /* Space between links */
+}
+
+.navbar-links a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  padding: 10px 15px;
+  border-bottom: 2px solid transparent; /* No underline by default */
+  transition: border-bottom 0.3s ease; /* Smooth underline transition */
+}
+
+.navbar-links a:hover {
+  border-bottom: 2px solid white; /* Underline on hover */
+}
+
+/* Responsive for Mobile */
+@media (max-width: 768px) {
+  .navbar-links {
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    top: 80px; /* Adjusted for larger navbar */
+    right: 0;
+    background-color: #2b5876;
+    width: 100%;
+    display: none;
+  }
+
+  .navbar-links.active {
+    display: flex;
+  }
+
+  .navbar-links li {
+    margin: 10px 0;
+  }
+}

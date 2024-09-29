@@ -1,0 +1,128 @@
+/* General Styling */
+body {
+  font-family: "Arial", sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f8f9fa;
+  color: #333;
+}
+
+/* Home Container */
+.home-container {
+  display: flex;
+  flex-direction: column; /* Change to column layout */
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-image: linear-gradient(to bottom right, #2b5876, #4e4376);
+}
+
+/* Animated Text Container */
+.animated-text-container {
+  text-align: center; /* Center the animated text */
+  margin-bottom: 40px; /* Space below animated text */
+}
+
+/* Home Content Styling */
+.home-content {
+  background-color: white;
+  padding: 60px;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  max-width: 500px;
+  width: 100%;
+}
+
+/* Heading Styling */
+h1 {
+  color: #4e4376;
+  font-size: 32px;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+/* Description Paragraph */
+p {
+  color: #6c757d;
+  font-size: 16px;
+  margin-bottom: 30px;
+}
+
+/* File Upload Styling */
+.file-upload {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+input[type="file"] {
+  display: none;
+}
+
+label {
+  background-color: #4e4376;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 50px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+/* Summarize Button Styling */
+.summarize-btn {
+  background-color: #2b5876;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 50px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.summarize-btn:disabled {
+  background-color: #aaa;
+  cursor: not-allowed;
+}
+
+/* Summary Container Styling */
+.summary-container {
+  background-color: #f4f4f9;
+  margin-top: 30px;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.summary-container h2 {
+  color: #4e4376;
+  margin-bottom: 10px;
+}
+
+.summary-container p {
+  color: #6c757d;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+/* Animated Text Styling */
+.animated-text {
+  font-size: 48px; /* Size of the animated text */
+  color: white; /* Text color */
+  text-align: center; /* Center the text */
+  margin: 0; /* Reset margin */
+  opacity: 0; /* Start with invisible text */
+  animation: fadeIn 2s forwards; /* Animation properties */
+}
+
+/* Keyframes for Animation */
+@keyframes fadeIn {
+  0% {
+    opacity: 0; /* Start invisible */
+    transform: translateY(-20px); /* Start from above */
+  }
+  100% {
+    opacity: 1; /* Fade to visible */
+    transform: translateY(0); /* End at normal position */
+  }
+}
