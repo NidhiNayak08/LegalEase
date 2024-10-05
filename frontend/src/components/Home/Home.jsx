@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "./Home.css";
+import Features from "../Features/Features";
 
 const Home = () => {
   const [selectedFile, setSelectedFile] = useState(null);
@@ -55,6 +56,7 @@ const Home = () => {
           </div>
         )}
       </div>
+      <Features />
     </div>
   );
 };
