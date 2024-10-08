@@ -3,6 +3,7 @@ import React, { useState } from "react";
 import { signInWithEmailAndPassword } from "firebase/auth";
 import { auth } from "../../firebaseConfig";
 import "./Login.css"; // You can create this file for styling
+import { redirect } from "react-router-dom";
 
 const Login = () => {
   const [email, setEmail] = useState("");
@@ -16,6 +17,7 @@ const Login = () => {
       await signInWithEmailAndPassword(auth, email, password);
       alert("Login successful!");
       // Redirect user to dashboard or home
+      redirect("/");
     } catch (err) {
       setError("Failed to log in: " + err.message);
     }

@@ -5,8 +5,7 @@
   background-color: #1a1f3d;
   padding: 20px 40px;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-  height: 80px; /* Larger height */
-  position: relative; /* To help with centering */
+  height: 80px; /* Larger height */ /* To help with centering */
 }
 
 /* Logo Styling */
@@ -16,8 +15,20 @@
   font-weight: bold;
   text-decoration: none;
   letter-spacing: 2px;
-  position: absolute; /* Keeps the logo on the far left */
+  /* Keeps the logo on the far left */
   left: 40px; /* Adjust as necessary */
+}
+
+.left {
+  flex: 20%;
+}
+
+.mid {
+  flex: 60%;
+}
+
+.right {
+  flex: 20%;
 }
 
 /* Navbar Links Styling */
